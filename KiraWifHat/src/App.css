@@ -1,15 +1,66 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/PimpawCat-lg3dd.ttf);
+}
+
+@font-face {
+  font-family: mySecFont;
+  src: url(./assets/CatSong-3lly3.ttf);
+}
+
 * {
+  color:whitesmoke;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: #A2D2FF;
+  font-family: mySecFont;
 }
+
+.brand {
+  font-family: myFirstFont;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(96 165 250);
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background: transparent;
+  /* background-color: #ffafcc29; */
+}
+
+
+
+/* a {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.25s ease;
+} */
 
 /* #root {
   max-width: 1280px;
