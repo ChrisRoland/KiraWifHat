@@ -157,24 +157,47 @@ const WebComponent = () => {
         {/*About*/}
         <div className="m-10 flex-row justify-center">
           <div className="w-full text-center">
-          <div>
-            <h2 className="text-4xl text-[#40076be5] text-center font-bold">Our Furry Story</h2>
-            <p>
-              In a world filled with serious investments and transactions,
-              a cat pounced onto the scene with a vision: to make the
-              blockchain a place for both fun and profit. With a hat as her
-              crown and the Injective blockchain as her realm, she’s on a
-              mission to whisker you away into the world of KiraWifHat, where
-              finance meets fun in the most delightful way.
-            </p>
-          </div>
+            <div>
+              <h2 className="text-4xl text-[#40076be5] text-center font-bold">
+                Our Furry Story
+              </h2>
+              <p>
+                In a world filled with serious investments and transactions, a
+                cat pounced onto the scene with a vision: to make the blockchain
+                a place for both fun and profit. With a hat as her crown and the
+                Injective blockchain as her realm, she’s on a mission to whisker
+                you away into the world of KiraWifHat, where finance meets fun
+                in the most delightful way.
+              </p>
+            </div>
           </div>
         </div>
 
         {/*Contract Address */}
-        <div className="">
-          <div>
-            <h2>Contract Address</h2>
+        <div className="m-10">
+          <div  className="w-full text-center">
+            <h2 className="text-4xl text-[#40076be5] text-center font-bold">
+              Contract Address
+            </h2>
+            <p>
+              <a href="#">factory/injxxxxxxxxxxxxxxxxxxxxxxx/KiraWifHat</a>
+            </p>
+          </div>
+        </div>
+
+        {/*Tokenomics */}
+        <div className="m-10">
+          <div  className="w-full text-center">
+            <h2 className="text-4xl text-[#40076be5] text-center font-bold">
+              Tokenomics
+            </h2>
+            <p>
+              Liquidity ≠≠ 70%<br></br>
+              Presale ≠≠ 20% <br></br>
+              Marketing ≠≠ 5% <br></br>
+              Community Incentives ≠≠ 5% <br></br>
+              TOTAL SUPPLY ≠ 250,000,000,000<br></br>
+            </p>
           </div>
         </div>
       </div>
