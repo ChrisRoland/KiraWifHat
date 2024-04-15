@@ -1,16 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "../assets/KiraWifHat.svg";
 import Paw from "../assets/image.png";
-import Cool from "../assets/CoolCat.png";
+import Cool from "../assets/CooCat.png";
 import Coin from "../assets/Coin.png";
 
 const WebComponent = () => {
   return (
-    <div className="main text-lg">
-      <header className="">
+    <div className="main text-xl ">
+      <header className=" ">
         <div className="navbar sticky top-0 shadow-xl" id="navMenu">
-          <a href="/#home">Buy KiraWifHat</a>
-          <a href="/#How-to-buy" className="">
+          <a href="/#home" className="hover:underline">
+            Buy KiraWifHat
+          </a>
+          <a href="/#How-to-buy" className="hover:underline">
             PawMap
           </a>
 
@@ -20,8 +22,12 @@ const WebComponent = () => {
             className="inline m-3 w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200"
           ></img>
 
-          <a href="/#utility">Telegram</a>
-          <a href="/#roadmap">Twitter / X</a>
+          <a href="https://t.co/buRePTlZ9D" className="hover:underline">
+            Telegram
+          </a>
+          <a href="https://twitter.com/KiraWifHat" className="hover:underline">
+            Twitter / X
+          </a>
         </div>
         {/* Header Section*/}
         {/* <div className="nav mb-10 max-sm:flex max-sm:justify-center">
@@ -65,59 +71,56 @@ const WebComponent = () => {
         {/* </div> */}
       </header>
       {/*Hero Section*/}
-      <div className="wrapper mt-[10rem]">
+      <div className="wrapper pt-[11.5rem]">
         <div className="inner flex gap-10">
-          <div className="title w-[50%] text-center">
-            <h1 className="text-7xl m-5 brand text-[#40076be5]">KiraWifHat</h1>
+          <div className="title w-[50%] text-center pt-11">
+            <h1 className="text-7xl m-5 brand text-[#0ad0f8e5] text-sh">
+              KiraWifHat
+            </h1>
             <p>
-              <img
-                src={Paw}
-                alt="paw prints"
-                className="inline h-8 w-8 pb"
-              ></img>
+              <img src={Paw} alt="paw prints" className="inline h-8 w-8"></img>
               The Purr-fect Token on Injective Chain!
-              <img
-                src={Paw}
-                alt="paw prints"
-                className="inline h-8 w-8 pb-3"
-              ></img>
+              <img src={Paw} alt="paw prints" className="inline h-8 w-8"></img>
             </p>
-            <p>Coolest cats are cats with Hats 🐱🎩</p>
+            <p className="">Coolest cats are cats with Hats 🐱🎩</p>
             <div className="buttons mt-7 flex flex-col justify-center md:flex-row gap-3 lg:gap-5 xl:gap-7 items-center lg:mt-6 xl:mt-8">
               <a
                 href=""
-                className="hov border-2 bg-blue-400 hover:bg-blue-200 text-white hover:text-blue-400 shadow-[0_5px_2px_0px_rgba(0,0,0,0.3)] shadow-blue-300 text-center text-2xl max-sm:text-1xl xl:text-3xl transition-all duration-500 rounded-xl lg:rounded-2xl py-2 px-3 max-sm:px-3 max-sm:py-1 hover:-translate-y-1"
+                className="hov border-2 bg-[#0ad0f8e5] hover:bg-blue-200 text-white hover:text-gray-600 shadow-[0_5px_2px_0px_rgba(0,0,0,0.3)] shadow-blue-300 text-center text-2xl max-sm:text-1xl xl:text-3xl transition-all duration-500 rounded-xl lg:rounded-2xl py-2 px-3 max-sm:px-3 max-sm:py-1 hover:-translate-y-2"
               >
                 Buy £KiraWifHat
               </a>
               <a
                 href=""
-                className="border-2 bg-blue-400 hover:bg-blue-200 text-white hover:text-blue-400 shadow-[0_5px_2px_0px_rgba(0,0,0,0.3)] shadow-blue-300 text-center text-2xl max-sm:text-1xl xl:text-3xl transition-all duration-500 rounded-xl lg:rounded-2xl py-2 px-3 max-sm:px-3 max-sm:py-1 hover:transform hover:-translate-y-1"
+                className="border-2 bg-[#0ad0f8e5] hover:bg-blue-200 text-white hover:text-gray-600 shadow-[0_5px_2px_0px_rgba(0,0,0,0.3)] shadow-blue-300 text-center text-2xl max-sm:text-1xl xl:text-3xl transition-all duration-500 rounded-xl lg:rounded-2xl py-2 px-3 max-sm:px-3 max-sm:py-1 hover:transform hover:-translate-y-2"
               >
                 PlayGround 🐾
               </a>
             </div>
-            <div className="socials flex justify-center p-5">
+            <div className="socials justify-center mt-5 flex p-5">
               <a
-                className="px-3"
-                href="https://x.com/"
+                className="px-3 hover:-translate-y-2 transition-all duration-500"
+                href="https://twitter.com/KiraWifHat"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
                   stroke="white"
-                  fill="darkblue"
+                  fill="lightblue"
                   strokeWidth="10"
                   viewBox="0 0 512 512"
-                  height="2.5em"
-                  width="2.5em"
+                  height="2em"
+                  width="2em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
                 </svg>
               </a>
 
-              <a href="" className="">
+              <a
+                href=""
+                className="hover:-translate-y-2 transition-all duration-500"
+              >
                 <img
                   src={Coin}
                   alt="coinhall logo"
@@ -126,81 +129,103 @@ const WebComponent = () => {
               </a>
 
               <a
-                className="px-3"
-                href=""
+                className="px-3 hover:-translate-y-2 transition-all duration-500"
+                href="https://t.co/buRePTlZ9D"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
                   stroke="white"
-                  fill="darkblue"
+                  fill="lightblue"
                   strokeWidth="10"
                   viewBox="0 0 448 512"
-                  height="2.5em"
-                  width="2.5em"
+                  height="2em"
+                  width="2em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
                 </svg>
               </a>
             </div>
+            <div className="flex justify-center">
+              <hr className="w-[80%]"></hr>
+            </div>
           </div>
           <div>
             <img
               src={Cool}
               alt="cool cat"
-              className="w-[450px] h-[450px]"
+              className="w-[450px] h-[450px] rounded-3xl"
             ></img>
           </div>
         </div>
 
         {/*About*/}
-        <div className="m-10 flex-row justify-center">
+        <div className="my-20 flex-row justify-center">
           <div className="w-full text-center">
-            <div>
-              <h2 className="text-4xl text-[#40076be5] text-center font-bold">
-                Our Furry Story
-              </h2>
-              <p>
-                In a world filled with serious investments and transactions, a
-                cat pounced onto the scene with a vision: to make the blockchain
-                a place for both fun and profit. With a hat as her crown and the
-                Injective blockchain as her realm, she’s on a mission to whisker
-                you away into the world of KiraWifHat, where finance meets fun
-                in the most delightful way.
-              </p>
+            <h2 className="text-4xl text-[#0ad0f8e5] text-center underline font-bold">
+              Our Furry Story
+            </h2>
+            <div className="flex p-5">
+              <div className="w-full">
+                <img
+                  src={Cool}
+                  alt="cool cat"
+                  className="w-[450px] h-[450px]"
+                ></img>
+              </div>
+              <div className="flex justify-center">
+                <div className="w-[70%]">
+                  In a world filled with serious investments and transactions, a
+                  cat pounced onto the scene with a vision: to make the
+                  blockchain a place for both fun and profit. With a hat as her
+                  crown and the Injective blockchain as her realm, she’s on a
+                  mission to whisker you away into the world of KiraWifHat,
+                  where finance meets fun in the most delightful way.
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         {/*Contract Address */}
         <div className="m-10">
-          <div  className="w-full text-center">
-            <h2 className="text-4xl text-[#40076be5] text-center font-bold">
+          <div className="w-full text-center">
+            <h2 className="text-4xl text-[#0ad0f8e5] text-center underline font-bold">
               Contract Address
             </h2>
-            <p>
-              <a href="#">factory/injxxxxxxxxxxxxxxxxxxxxxxx/KiraWifHat</a>
+            <p className="p-5">
+              <a
+                href="#"
+                className="hover:text-2xl transition-all duration-500"
+              >
+                factory/injxxxxxxxxxxxxxxxxxxxxxxx/KiraWifHat
+              </a>
             </p>
           </div>
         </div>
 
         {/*Tokenomics */}
         <div className="m-10">
-          <div  className="w-full text-center">
-            <h2 className="text-4xl text-[#40076be5] text-center font-bold">
+          <div className="w-full text-center">
+            <h2 className="text-4xl text-[#0ad0f8e5] text-center underline font-bold">
               Tokenomics
             </h2>
-            <p>
-              Liquidity ≠≠ 70%<br></br>
-              Presale ≠≠ 20% <br></br>
-              Marketing ≠≠ 5% <br></br>
-              Community Incentives ≠≠ 5% <br></br>
-              TOTAL SUPPLY ≠ 250,000,000,000<br></br>
+            <p className="p-5">
+              Liquidity ≠≠ 700%<br></br>
+              Presale ≠≠ 200% <br></br>
+              Marketing ≠≠ 500% <br></br>
+              Community Incentives ≠≠ 500% <br></br>
+              TOTAL SUPPLY ≠ 900,000,000,000<br></br>
             </p>
           </div>
         </div>
       </div>
+      <footer className="text-center flex justify-center">
+        <p className="copyright p-3 border-t-[#40076be5] border-t-2 w-[80%]">
+          &copy; 2024 by KiraWifHat. All Rights Reserved
+        </p>
+      </footer>
     </div>
   );
 };
