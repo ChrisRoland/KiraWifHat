@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "../assets/KiraWifHat.svg";
 import Paw from "../assets/image.png";
-import Cool from "../assets/CooCat.png";
+import Cool from "../assets/Coolkat.png";
 import Coin from "../assets/Coin.png";
 
 const WebComponent = () => {
@@ -155,27 +155,27 @@ const WebComponent = () => {
             <img
               src={Cool}
               alt="cool cat"
-              className="w-[450px] h-[450px] rounded-3xl"
+              className="w-[450px] h-[450px] rounded-[30%]"
             ></img>
           </div>
         </div>
 
         {/*About*/}
         <div className="my-20 flex-row justify-center">
-          <div className="w-full text-center">
-            <h2 className="text-4xl text-[#0ad0f8e5] text-center underline font-bold">
+          <div className=" text-center">
+            <h2 className="text-5xl text-[#0ad0f8e5] text-center underline font-bold">
               Our Furry Story
             </h2>
             <div className="flex p-5">
-              <div className="w-full">
+              <div className="w-[40%]">
                 <img
                   src={Cool}
                   alt="cool cat"
-                  className="w-[450px] h-[450px]"
+                  className="w-[450px] h-[450px] rounded-[30%]"
                 ></img>
               </div>
-              <div className="flex justify-center">
-                <div className="w-[70%]">
+              <div className="flex justify-center items-center w-[50%]">
+                <div className="px-15">
                   In a world filled with serious investments and transactions, a
                   cat pounced onto the scene with a vision: to make the
                   blockchain a place for both fun and profit. With a hat as her
@@ -191,13 +191,13 @@ const WebComponent = () => {
         {/*Contract Address */}
         <div className="m-10">
           <div className="w-full text-center">
-            <h2 className="text-4xl text-[#0ad0f8e5] text-center underline font-bold">
+            <h2 className="text-5xl text-[#0ad0f8e5] text-center underline font-bold">
               Contract Address
             </h2>
             <p className="p-5">
               <a
                 href="#"
-                className="hover:text-2xl transition-all duration-500"
+                className="hover:text-2xl hover:underline transition-all duration-500"
               >
                 factory/injxxxxxxxxxxxxxxxxxxxxxxx/KiraWifHat
               </a>
@@ -208,7 +208,7 @@ const WebComponent = () => {
         {/*Tokenomics */}
         <div className="m-10">
           <div className="w-full text-center">
-            <h2 className="text-4xl text-[#0ad0f8e5] text-center underline font-bold">
+            <h2 className="text-5xl text-[#0ad0f8e5] text-center underline font-bold">
               Tokenomics
             </h2>
             <p className="p-5">
@@ -222,7 +222,7 @@ const WebComponent = () => {
         </div>
       </div>
       <footer className="text-center flex justify-center">
-        <p className="copyright p-3 border-t-[#40076be5] border-t-2 w-[80%]">
+        <p className="copyright p-3 border-t-[#fff] border-t-2 w-[80%]">
           &copy; 2024 by KiraWifHat. All Rights Reserved
         </p>
       </footer>
