@@ -27,7 +27,7 @@ const WebComponent = () => {
               : ""
           }`}
         >
-          <div className="navbar sticky top-0 shadow-xl " id="navMenu">
+          <div className="navbar sticky top-0 shadow-xl ">
             <a href="/#home" className="hover:underline">
               Buy KiraWifHat
             </a>
@@ -212,7 +212,7 @@ const WebComponent = () => {
       </div>
 
       {/*Footer*/}
-      <footer className="text-center flex justify-center">
+      <footer className="text-center flex justify-center text-sm">
         <p className="copyright p-3 border-t-[#fff] border-t-2 w-[80%]">
           &copy; 2024 by KiraWifHat. All Rights Reserved
         </p>
