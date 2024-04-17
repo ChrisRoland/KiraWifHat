@@ -5,82 +5,65 @@ import Cool from "../assets/Coolkat.png";
 import Coin from "../assets/Coin.png";
 
 const WebComponent = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="main text-xl ">
+    <div className="main text-xl max-sm:text-[1.1rem]">
+      {/*Header */}
       <header className=" ">
-        <div className="navbar sticky top-0 shadow-xl" id="navMenu">
-          <a href="/#home" className="hover:underline">
-            Buy KiraWifHat
-          </a>
-          <a href="/#How-to-buy" className="hover:underline">
-            PawMap
-          </a>
-
-          <img
-            src={Logo}
-            alt="KiraWifHat logo"
-            className="inline m-3 w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200"
-          ></img>
-
-          <a href="https://t.co/buRePTlZ9D" className="hover:underline">
-            Telegram
-          </a>
-          <a href="https://twitter.com/KiraWifHat" className="hover:underline">
-            Twitter / X
-          </a>
+        <div className="">
+          <button
+            className="hamburger pl-32"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {}
+            &#9776;
+          </button>
         </div>
-        {/* Header Section*/}
-        {/* <div className="nav mb-10 max-sm:flex max-sm:justify-center">
-          <a href="https://seiviour.xyz" className="bg-inherit ">
-            <div className="flex items-center bg-inherit ">
-              <img
-                src={Logo}
-                alt="KiraWifHat logo"
-                className="w-[60px] max-sm:w-[40px] rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200"
-              ></img>
-              <h1 className="bg-inherit text-white text-4xl max-sm:text-3xl px-2">
-                SEIviour
-              </h1>
-            </div>
-          </a> */}
-        {/* <div className="flex gap-16 bg-inherit max-sm:hidden">
-            <ScrollLink
-              to="links"
-              smooth={true}
-              duration={900}
-              className="bg-inherit"
+        <div
+          className={`nav-links ${
+            isMenuOpen
+              ? "mobile-open w-fit bg-[rgba(78,40,105,0.54)] mx-auto my-3 px-1.5 shadow-[0_1px_5px_0px_rgba(0,0,0,0.3)] shadow-purple-500 rounded text-center"
+              : ""
+          }`}
+        >
+          <div className="navbar sticky top-0 shadow-xl " id="navMenu">
+            <a href="/#home" className="hover:underline">
+              Buy KiraWifHat
+            </a>
+            <a href="/#How-to-buy" className="hover:underline">
+              PawMap
+            </a>
+
+            <img
+              src={Logo}
+              alt="KiraWifHat logo"
+              className="inline m-3 w-[60px] max-sm:w-[40px] max-sm:hidden rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200"
+            ></img>
+
+            <a href="https://t.co/buRePTlZ9D" className="hover:underline">
+              Telegram
+            </a>
+            <a
+              href="https://twitter.com/KiraWifHat"
+              className="hover:underline"
             >
-              <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[150px] text-center text-[#e2c67a] text-2xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-                <a href="" className="bg-inherit">
-                  Buy
-                </a>
-              </div>
-            </ScrollLink>
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[150px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <Link to="/About" className="bg-inherit">
-                About
-              </Link>
-            </div>
-            
-            <div className="bg-inherit border border-yellow-500 rounded-[50px] w-[100px] text-center text-[#e2c67a] text-xl hover:bg-yellow-200 hover:text-black ease-in-out duration-300 shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-yellow-200">
-              <a href="/register" className="bg-inherit ">
-                NFTS
-              </a>
-            </div>
-          </div> */}
-        {/* </div> */}
+              Twitter / X
+            </a>
+          </div>
+        </div>
       </header>
       {/*Hero Section*/}
-      <div className="wrapper pt-[11.5rem]">
-        <div className="inner flex gap-10">
-          <div className="title w-[50%] text-center pt-11">
-            <h1 className="text-7xl m-5 brand text-[#0ad0f8e5] text-sh">
+      <div className="wrapper pt-[11.5rem] max-sm:pt-[9rem]">
+        <div className="inner flex gap-10 max-sm:gap-0 max-sm:flex-col-reverse justify-center">
+          <div className="title w-[50%] max-sm:w-[100%] text-center pt-11">
+            <h1 className="text-7xl max-sm:text-5xl m-5 brand text-[#0ad0f8e5] text-sh">
               KiraWifHat
             </h1>
             <p>
-              <img src={Paw} alt="paw prints" className="inline h-8 w-8"></img>
+              <img src={Paw} alt="paw prints" className="inline h-5 w-5"></img>
               The Purr-fect Token on Injective Chain!
-              <img src={Paw} alt="paw prints" className="inline h-8 w-8"></img>
+              <img src={Paw} alt="paw prints" className="inline h-5 w-5"></img>
             </p>
             <p className="">Coolest cats are cats with Hats 🐱🎩</p>
             <div className="buttons mt-7 flex flex-col justify-center md:flex-row gap-3 lg:gap-5 xl:gap-7 items-center lg:mt-6 xl:mt-8">
@@ -151,30 +134,30 @@ const WebComponent = () => {
               <hr className="w-[80%]"></hr>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center">
             <img
               src={Cool}
               alt="cool cat"
-              className="w-[450px] h-[450px] rounded-[30%]"
+              className="w-[450px] h-[450px] max-sm:w-[300px] max-sm:h-[300px] rounded-[30%]"
             ></img>
           </div>
         </div>
 
         {/*About*/}
-        <div className="my-20 flex-row justify-center">
+        <div className="my-20 max-sm:my-10 flex-row justify-center">
           <div className=" text-center">
-            <h2 className="text-5xl text-[#0ad0f8e5] text-center underline font-bold">
+            <h2 className="text-5xl max-sm:text-4xl text-[#0ad0f8e5] text-center underline font-bold">
               Our Furry Story
             </h2>
             <div className="flex p-5">
-              <div className="w-[40%]">
+              <div className="w-[40%] max-sm:hidden">
                 <img
                   src={Cool}
                   alt="cool cat"
                   className="w-[450px] h-[450px] rounded-[30%]"
                 ></img>
               </div>
-              <div className="flex justify-center items-center w-[50%]">
+              <div className="flex justify-center items-center w-[50%] max-sm:w-full">
                 <div className="px-15">
                   In a world filled with serious investments and transactions, a
                   cat pounced onto the scene with a vision: to make the
@@ -186,12 +169,15 @@ const WebComponent = () => {
               </div>
             </div>
           </div>
+          <div className="flex justify-center">
+            <hr className="w-[80%]"></hr>
+          </div>
         </div>
 
         {/*Contract Address */}
         <div className="m-10">
           <div className="w-full text-center">
-            <h2 className="text-5xl text-[#0ad0f8e5] text-center underline font-bold">
+            <h2 className="text-5xl max-sm:text-3xl text-[#0ad0f8e5] text-center underline font-bold">
               Contract Address
             </h2>
             <p className="p-5">
@@ -199,16 +185,19 @@ const WebComponent = () => {
                 href="#"
                 className="hover:text-2xl hover:underline transition-all duration-500"
               >
-                factory/injxxxxxxxxxxxxxxxxxxxxxxx/KiraWifHat
+                factory/injxxxxx/KiraWifHat
               </a>
             </p>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <hr className="w-[80%]"></hr>
         </div>
 
         {/*Tokenomics */}
         <div className="m-10">
           <div className="w-full text-center">
-            <h2 className="text-5xl text-[#0ad0f8e5] text-center underline font-bold">
+            <h2 className="text-5xl max-sm:text-3xl text-[#0ad0f8e5] text-center underline font-bold">
               Tokenomics
             </h2>
             <p className="p-5">
@@ -221,6 +210,8 @@ const WebComponent = () => {
           </div>
         </div>
       </div>
+
+      {/*Footer*/}
       <footer className="text-center flex justify-center">
         <p className="copyright p-3 border-t-[#fff] border-t-2 w-[80%]">
           &copy; 2024 by KiraWifHat. All Rights Reserved

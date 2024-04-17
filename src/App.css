@@ -28,6 +28,28 @@
     repeating-linear-gradient(#0ea3e655, #0ea3e6);
 }
 
+/*ham*/
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide regular navigation links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show navigation links when menu is open */
+  .nav-links.mobile-open {
+    display: block;
+    /* Add more styles for the open menu (e.g., position, width, etc.) */
+  }
+}
+
 /* body::before {
   background-image: url(./assets/BG.jpeg);
 } */
