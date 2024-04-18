@@ -11,9 +11,9 @@ const WebComponent = () => {
     <div className="main text-xl max-sm:text-[1.1rem]">
       {/*Header */}
       <header className=" ">
-        <div className=" p-3">
+        <div className=" p-3 pl-[20rem]">
           <button
-            className="hamburger"
+            className="hamburger bg-[rgba(40,94,105,0.74)] px-1 rounded border border-[#85c9f2]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {}
@@ -23,18 +23,18 @@ const WebComponent = () => {
         <div
           className={`nav-links ${
             isMenuOpen
-              ? "mobile-open w-fit bg-[rgba(40,94,105,0.74)] mx-auto px-1.5 shadow-[0_1px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200 rounded text-center"
+              ? "mobile-open w-fit bg-[rgba(40,94,105,0.74)] mx-auto px-2 py-1 shadow-[0_1px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200 rounded text-center"
               : ""
           }`}
         >
           <div className="shadow-xl lg:hidden md:hidden gap-6">
-            <a href="/#home" className="hover:underline pr-2">
+            <a href="/#home" className="hover:underline pr-1">
               Buy KiraWifHat
             </a>
-            <a href="/#How-to-buy" className="hover:underline px-1">
+            <a href="/#How-to-buy" className="hover:underline px-1 border-l-[#85c9f2] border-l border-r-[#85c9f2] border-r">
               PawMap
             </a>
-            <a href="https://t.co/buRePTlZ9D" className="hover:underline px-1">
+            <a href="https://t.co/buRePTlZ9D" className="hover:underline px-1 border-r-[#85c9f2] border-r">
               Telegram
             </a>
             <a
