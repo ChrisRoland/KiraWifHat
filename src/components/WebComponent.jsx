@@ -11,7 +11,7 @@ const WebComponent = () => {
     <div className="main text-xl max-sm:text-[1.1rem]">
       {/*Header */}
       <header className=" ">
-        <div className="">
+        <div className=" p-3">
           <button
             className="hamburger"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -23,39 +23,53 @@ const WebComponent = () => {
         <div
           className={`nav-links ${
             isMenuOpen
-              ? "mobile-open w-fit bg-[rgba(78,40,105,0.54)] mx-auto my-3 px-1.5 shadow-[0_1px_5px_0px_rgba(0,0,0,0.3)] shadow-purple-500 rounded text-center"
+              ? "mobile-open w-fit bg-[rgba(40,94,105,0.74)] mx-auto px-1.5 shadow-[0_1px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200 rounded text-center"
               : ""
           }`}
         >
-          <div className="navbar sticky top-0 shadow-xl ">
-            <a href="/#home" className="hover:underline">
+          <div className="shadow-xl lg:hidden md:hidden gap-6">
+            <a href="/#home" className="hover:underline pr-2">
               Buy KiraWifHat
             </a>
-            <a href="/#How-to-buy" className="hover:underline">
+            <a href="/#How-to-buy" className="hover:underline px-1">
               PawMap
             </a>
-
-            <img
-              src={Logo}
-              alt="KiraWifHat logo"
-              className="inline m-3 w-[60px] max-sm:w-[40px] max-sm:hidden rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200"
-            ></img>
-
-            <a href="https://t.co/buRePTlZ9D" className="hover:underline">
+            <a href="https://t.co/buRePTlZ9D" className="hover:underline px-1">
               Telegram
             </a>
             <a
               href="https://twitter.com/KiraWifHat"
-              className="hover:underline"
+              className="hover:underline pl-2"
             >
-              Twitter / X
+              X
             </a>
           </div>
+        </div>
+        <div className="max-sm:hidden navbar sticky top-0 shadow-xl ">
+          <a href="/#home" className="hover:underline">
+            Buy KiraWifHat
+          </a>
+          <a href="/#How-to-buy" className="hover:underline">
+            PawMap
+          </a>
+
+          <img
+            src={Logo}
+            alt="KiraWifHat logo"
+            className="inline m-3 w-[60px] max-sm:w-[40px] max-sm:hidden rounded-full overflow-hidden shadow-[0_5px_5px_0px_rgba(0,0,0,0.3)] shadow-blue-200"
+          ></img>
+
+          <a href="https://t.co/buRePTlZ9D" className="hover:underline">
+            Telegram
+          </a>
+          <a href="https://twitter.com/KiraWifHat" className="hover:underline">
+            Twitter / X
+          </a>
         </div>
       </header>
       {/*Hero Section*/}
       <div className="wrapper pt-[11.5rem] max-sm:pt-[3rem]">
-        <div className="inner flex gap-10 max-sm:gap-0 max-sm:flex-col-reverse justify-center">
+        <div className="inner flex gap-10 max-sm:gap-0 max-sm:flex-col-reverse max-sm:justify-center">
           <div className="title w-[50%] max-sm:w-[100%] text-center pt-11">
             <h1 className="text-7xl max-sm:text-5xl m-5 brand text-[#0ad0f8e5] text-sh">
               KiraWifHat
@@ -170,7 +184,7 @@ const WebComponent = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <hr className="w-[80%]"></hr>
+            <hr className="w-[50%]"></hr>
           </div>
         </div>
 
@@ -191,7 +205,7 @@ const WebComponent = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <hr className="w-[80%]"></hr>
+          <hr className="w-[50%]"></hr>
         </div>
 
         {/*Tokenomics */}
