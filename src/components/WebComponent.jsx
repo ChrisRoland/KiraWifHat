@@ -13,7 +13,7 @@ const WebComponent = () => {
       <header className=" ">
         <div className="">
           <button
-            className="hamburger pl-32"
+            className="hamburger"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {}
@@ -54,7 +54,7 @@ const WebComponent = () => {
         </div>
       </header>
       {/*Hero Section*/}
-      <div className="wrapper pt-[11.5rem] max-sm:pt-[9rem]">
+      <div className="wrapper pt-[11.5rem] max-sm:pt-[3rem]">
         <div className="inner flex gap-10 max-sm:gap-0 max-sm:flex-col-reverse justify-center">
           <div className="title w-[50%] max-sm:w-[100%] text-center pt-11">
             <h1 className="text-7xl max-sm:text-5xl m-5 brand text-[#0ad0f8e5] text-sh">
