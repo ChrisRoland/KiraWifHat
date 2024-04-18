@@ -11,9 +11,9 @@ const WebComponent = () => {
     <div className="main text-xl max-sm:text-[1.1rem]">
       {/*Header */}
       <header className=" ">
-        <div className=" p-3 pl-[20rem]">
+        <div className=" p-3 pl-[21rem]">
           <button
-            className="hamburger bg-[rgba(40,94,105,0.74)] px-1 rounded border border-[#85c9f2]"
+            className="hamburger bg-[rgba(40,94,105,0.74)] p-2.5 rounded border border-[#85c9f2]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {}
