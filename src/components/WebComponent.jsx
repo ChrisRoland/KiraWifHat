@@ -215,10 +215,10 @@ const WebComponent = () => {
               Tokenomics
             </h2>
             <p className="p-5">
-              Liquidity ≠≠ 700%<br></br>
-              Presale ≠≠ 200% <br></br>
-              Marketing ≠≠ 500% <br></br>
-              Community Incentives ≠≠ 500% <br></br>
+              Liquidity ≠ 700%<br></br>
+              Presale ≠ 200% <br></br>
+              Marketing ≠ 500% <br></br>
+              Community Incentives ≠ 500% <br></br>
               TOTAL SUPPLY ≠ 900,000,000,000<br></br>
             </p>
           </div>
