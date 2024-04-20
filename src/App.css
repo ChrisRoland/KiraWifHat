@@ -63,6 +63,10 @@ h1, h2 {
   text-shadow: 3px 3px 3px rgb(255, 255, 255);
 }
 
+.mobNav a {
+  text-shadow: 2px 2px 2px rgb(32, 208, 243);
+}
+
 .brand {
   font-family: myFirstFont;
 }

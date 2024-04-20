@@ -27,7 +27,7 @@ const WebComponent = () => {
               : ""
           }`}
         >
-          <div className="shadow-xl lg:hidden md:hidden gap-6">
+          <div className="shadow-xl lg:hidden md:hidden gap-6 mobNav">
             <a href="/#home" className="hover:underline pr-1">
               Buy KiraWifHat
             </a>
