@@ -9,7 +9,7 @@ const WebComponent = () => {
 
   return (
     <div className="main text-xl max-sm:text-[1.1rem]">
-      {/*Header */}
+      {/*Header Section */}
       <header className=" ">
         <div className=" p-3 pl-[21rem]">
           <button
